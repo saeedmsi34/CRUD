@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CRUD</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/all.min.css">
+    <link rel="stylesheet" href="main.css">
+</head>
+
+<body class="mp">
+    <section>
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="form-input">
+                        <label class="label">Product Name</label>
+                        <input type="text" name="name" class="form-control-lg is-vaild" id="inputName"
+                            placeholder="Name">
+                        <div id="nameAlert" class="alert alert-danger w-50  d-none">name should be start with
+                            capition...
+                        </div>
+                        <label class="label">Product Price</label>
+                        <input type="text" name="Product Price" class="form-control-lg" id="inputPrice"
+                            placeholder="Price">
+                        <label class="label">Product Category</label>
+                        <input type="text" name="product Category" class="form-control-lg" id="inputCategory"
+                            placeholder="Category">
+                        <label class="label">Product Description</label>
+                        <input type="text" name="Product Description" class="form-control-lg" id="inputDescription"
+                            placeholder="Description">
+                    </div>
+                    <div>
+                        <button class="btn productAd" id="submitBtn">Add Product</button>
+                    </div>
+                </div>
+
+                <div class="row">
+                    <div class="col-md-12 col-12">
+                        <div class="my-4 data">
+                            <input onkeyup="search(this.value)" class="form-control my-2" placeholder="search by name">
+                            <table class="table table-striped">
+                                <thead>
+                                    <th></th>
+                                    <th>name</th>
+                                    <th>price</th>
+                                    <th>category</th>
+                                    <th>description</th>
+                                    <th></th>
+                                    <th></th>
+                                </thead>
+                                <tbody class="w-25" id="tableBody">
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
